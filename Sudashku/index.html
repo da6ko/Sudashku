@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="css/sudoku.css" />
+</head>
+
+<header>
+    <h1> Suda6ku </h1> <br>
+    <div id="game-menu" class="game-menu">
+
+        <div id="difficulty" class="difficulty">
+            <h3>Choose difficulty:</h3>
+            <select onchange="generate_new_board(value)">
+                <option value="beginner">Easy</option>
+                <option value="intermediate">Medium</option>
+                <option value="advanced">Hard</option>
+                <option value="expert"> Expert</option>
+            </select>
+        </div>
+
+    </div>
+</header>
+
+<body>
+
+    <main>
+        <table class="sudoku center" id="sudoku">
+            <tbody></tbody>
+        </table>
+
+        <div class="loader">
+            <img src="loading.gif" alt="Loading..." />
+        </div>
+    </main>
+
+
+    <script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="js/arrow-table.js"></script>
+    <script type="text/javascript" src="js/main.js" defer></script>
+    <script type="text/javascript" src="js/utils.js"></script>
+
+
+
+</body>
+
+</html>
